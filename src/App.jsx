@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Root from "./layout/Root";
 import Help from "./pages/Help";
 import Faq from "./sub_pages/Faq";
-import ContactUs from "./sub_pages/ContactUs";
+import ContactUs, { contactAction } from "./sub_pages/ContactUs";
 import NotFound from "./pages/NotFound";
 import CarriersLayout from "./layout/CarriersLayout";
 import Careers from "./pages/careers/Careers";
@@ -35,6 +35,7 @@ const router = createBrowserRouter([
           { path: "faq", element: <Faq /> },
           {
             path: "contact",
+            action: contactAction,
             element: <ContactUs />,
           },
         ],
